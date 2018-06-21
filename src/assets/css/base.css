@@ -92,7 +92,7 @@ span.followBtn{display:inline-block;width:0.385rem;height:0.165rem;line-height:.
 .game-list .swiper-slide img{width:.54rem;height:auto;}
 
 .game-con{position:relative;margin-top:.07rem;border-top:1px solid #e2e2e2;border-bottom:1px solid #e2e2e2;background-color:#fff;}
-.fixed_header{position:fixed;bottom:0;max-width:640px;width:100%;z-index:999;}
+// .fixed_header{position:fixed;bottom:0;max-width:640px;width:100%;z-index:999;}
 .navList{position:relative;display:block;display:flex;background:#fff;background:rgba(255,255,255,0.9);border-top:1px solid #b2b2b2;}
 .navList i.iconfont{display:block;height:.25rem;line-height:.25rem;font-size:.18rem;}
 .navList .link_a{color:#f60;display:block;flex:1;text-align:center;padding:0.03rem 0 0.05rem;font-size:0.1rem;text-align:center;color:#4d4d4d;}
@@ -153,6 +153,8 @@ span.followBtn{display:inline-block;width:0.385rem;height:0.165rem;line-height:.
 .popFM strong{color:#000;}
 .popFM small{color:#666;}
 
+.fixed_header{height:.525rem;}
+.fixedNav{position:fixed;bottom:0;max-width:640px;width:100%;box-sizing: border-box;z-index:999;}
 .header {
 	height: 0.4rem;
 }
@@ -179,23 +181,6 @@ span.followBtn{display:inline-block;width:0.385rem;height:0.165rem;line-height:.
 	text-overflow: ellipsis;
 	white-space: nowrap;
 }
-.footer {
-	height: 0.4rem;
-}
-.footer_inner {
-	position: fixed;
-	bottom: 0;
-	left: 0;
-	right: 0;
-	z-index: 99;
-	max-width: 640px;
-	height: 0.4rem;
-	box-sizing: border-box;
-	margin: 0 auto;
-	padding: 0 0.24rem;
-	border-top:1px solid #ddd;
-	border-bottom: 0.02rem solid #80ccd6;
-	background-color: #fff;
-}
+
 
 .detail p{line-height:.3rem;}

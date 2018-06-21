@@ -2,7 +2,6 @@
 <template>  
     <div class="container">  
         <!-- 由于html不区分大小写，所以js中驼峰命名方式在html中要改成用短横线连接的形式 -->  
-        <home-header :title="home"></home-header> 
         <Home-nav></Home-nav>
         <div class="jgBanner"><router-link to='/'><img src="../assets/images/banner01.jpg" alt=""></router-link></div>
         <section class="new-hot" id="playB">
@@ -36,7 +35,7 @@
                 </li>
             </ul>
             <div class="moreShow">
-                <a href="javascript:void(0);" class="share_more">点击加载更多</a>
+                <span class="share_more">点击加载更多</span>
             </div>
         </div>
         <section class="new-hot four_hot">
@@ -84,6 +83,7 @@
             </ul>  
         </div>  
         <home-footer></home-footer>
+        <home-header :title="home"></home-header> 
     </div>  
 </template>  
 <style>
@@ -107,6 +107,13 @@
         clear: both;  
     }  
 </style>  
+<style lang="scss" scoped>
+    @import '../assets/scss/mixin';
+    .header{
+        @include font(12px,1.6);
+        @include wh(100%, .4rem);
+    }
+</style>
 <script>  
     // 导入要用到的子组件  
     import HomeHeader from '../components/HomeHeader'  

@@ -2,7 +2,6 @@
 <template>  
     <div id="container">
         <!-- 由于html不区分大小写，所以js中驼峰命名方式在html中要改成用短横线连接的形式 -->  
-        <home-header :title="home"></home-header> 
         <nav class="home-nav">
             <Home-nav v-for="item in nav" :title="item.index" :href="item.href" :style="item.colorActive"></Home-nav>
         </nav> 
@@ -17,6 +16,7 @@
             </ul>  
         </div>  
         <home-footer></home-footer>
+        <home-header :title="home"></home-header> 
     </div> 
 </template>  
 <style>

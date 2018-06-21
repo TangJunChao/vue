@@ -23,4 +23,5 @@
 	export default{
 		props:['title']
 	}
+	// document.getElementsByTagName('body')[0].style.marginBottom='.525rem'
 </script>
