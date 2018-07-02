@@ -2,6 +2,10 @@
 
 > A Vue.js project
 
+修改配置地址：<br>
+修改路径是：config/index.js <br>
+修改内容是：host:'192.168.10.162';//修改为host:'localhost';
+
 ## Build Setup
 
 ``` bash
